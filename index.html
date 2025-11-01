@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colegio Santa Cecilia | 25 Años Educando en Tafí Viejo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="imagenes/csc.png">
+
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+
+        <div class="d-flex align-items-center">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="imagenes/csc.png" alt="Logo CSC" class="navbar-logo me-2" id="foto">
+            </a>
+            
+           
+        </div>
+
+        <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                aria-controls="mainNav" aria-expanded="false" aria-label="Alternar navegación">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="nivelesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Niveles
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="nivelesDropdown">
+                        <li><a class="dropdown-item" href="#inicial">Nivel Inicial</a></li>
+                        <li><a class="dropdown-item" href="#primaria">Nivel Primario</a></li>
+                        <li><a class="dropdown-item" href="#secundaria">Nivel Secundario</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" id="comunidadDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Comunidad
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="comunidadDropdown">
+        <li><a class="dropdown-item" href="#comunidad">Noticias</a></li>
+        <li><a class="dropdown-item" href="#historia">Nuestra Historia</a></li>
+    </ul>
+</li>
+                <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+            </ul>
+            <a href="#preinscripcion" class="btn btn-brand-red ms-lg-3 d-none d-lg-block">Preinscripción</a>
+         <div class="dropdown">
+                <a class="btn nav-link dropdown-toggle" href="#" id="themeDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Cambiar tema">
+                    <i class="bi bi-sun-fill theme-icon-active" data-theme-icon="light"></i>
+                    <i class="bi bi-moon-stars-fill theme-icon-active d-none" data-theme-icon="dark"></i>
+                </a>
+                <ul class="dropdown-menu " aria-labelledby="themeDropdown">
+                    <li>
+                        <button type="button" class="dropdown-item " data-bs-theme-value="light">
+                            <i class="bi bi-sun-fill me-2"></i>
+                            Claro
+                            <i class="bi bi-check-lg ms-auto d-none"></i>
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" class="dropdown-item d-flex " data-bs-theme-value="dark">
+                            <i class="bi bi-moon-stars-fill me-2"></i>
+                            Oscuro
+                            <i class="bi bi-check-lg ms-auto d-none"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</nav>
+    <header id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-pause="false" data-bs-interval="3000">
+        <div class="carousel-inner">
+
+            <div class="carousel-item active" style="background-image: url('imagenes/talentos.jpg');">
+                <div class="overlay"></div>
+                <div class="carousel-caption d-flex flex-column justify-content-center h-100">
+                    <div class="container text-center animated-fade-in">
+                        <p class="hero-subtitle animated-subheading">Bienvenido al</p>
+                        <h1 class="display-3 fw-bold mb-4 animated-heading">
+                            Colegio <span class="text-csc-red">Santa Cecilia</span>
+                        </h1>
+                        <p class="lead mb-5 animated-subheading">
+                            Más de 25 años formando el futuro de Tafí Viejo con excelencia, fe y compromiso comunitario.
+                        </p>
+                        <a href="#nuestra-propuesta" class="btn btn-outline-light btn-lg animated-button">Nuestra Propuesta</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item" style="background-image: url('imagenes/infancias.png'); background-size: cover; background-position: center center;">
+                <div class="overlay"></div>
+                <div class="carousel-caption d-flex flex-column justify-content-center h-100">
+                    <div class="container text-center">
+                        <h2 class="display-4 fw-bold mb-3">
+                            Inspirando la <span class="text-csc-white">curiosidad</span> que durará toda la vida.
+                        </h2>
+                        <a href="#niveles" class="btn btn-brand-red btn-lg">Conocé nuestra propuesta</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item" style="background-image: url('imagenes/voley.png');">
+                <div class="overlay"></div>
+                <div class="carousel-caption d-flex flex-column justify-content-center h-100">
+                    <div class="container text-center">
+                        <h2 class="display-4 fw-bold mb-3">
+                            Un espacio para crecer, aprender y <span class="text-csc-white">descubrir</span> nuevos talentos.
+                        </h2>
+                        <a href="#niveles" class="btn btn-brand-red btn-lg">Viví la experiencia CSC</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item" style="background-image: url('imagenes/marcha.jpg');">
+                <div class="overlay"></div>
+                <div class="carousel-caption d-flex flex-column justify-content-center h-100">
+                    <div class="container text-center">
+                        <h2 class="display-4 fw-bold mb-3">
+                            Formando protagonistas que dejarán su <span class="text-csc-red">huella</span> en el mundo.
+                        </h2>
+                        <a href="#niveles" class="btn btn-brand-red btn-lg">Preparate para el futuro</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+        </button>
+
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+    </header>
+
+    <section id="niveles" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Nuestra Propuesta Pedagógica</h2>
+                <p class="text-muted">Innovación y valores en cada etapa del desarrollo.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card level-card h-100 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="level-icon mb-3"><i class="bi bi-person-fill-add"></i></div>
+                            <h3 class="card-title">Nivel Inicial</h3>
+                            <p class="card-text text-muted">Acompañamiento personalizado en la primera infancia.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card level-card h-100 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="level-icon mb-3"><i class="bi bi-book-fill"></i></div>
+                            <h3 class="card-title">Nivel Primario</h3>
+                            <p class="card-text text-muted">Desarrollo de habilidades y pensamiento crítico.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <div class="card level-card h-100 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="level-icon mb-3"><i class="bi bi-mortarboard-fill"></i></div>
+                            <h3 class="card-title">Nivel Secundario</h3>
+                            <p class="card-text text-muted">Formación integral para la universidad y la vida.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+ <section id="comunidad" class="py-5 bg-light">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="section-title">Nuestra Comunidad en Acción</h2>
+            <p class="text-muted">La vida del Colegio Santa Cecilia, en constante movimiento.</p>
+        </div>
+
+        <div id="comunidadCarousel-pc" class="carousel slide d-none d-lg-block" data-bs-ride="carousel" data-bs-interval="1000">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-lg-4 d-flex"><div class="news-card"><div class="news-image" style="background-image: url('imagenes/25años.jpg');"><h4>¡Celebramos 25 Años!</h4></div><div class="card-content"><p class="news-date">Octubre 2025</p><p>Un hito de compromiso con la educación, celebrado con toda nuestra querida comunidad.</p><a href="https://www.tafiviejo.gob.ar/noticia/educacion/133977/rodriguez-acompano-celebracion-25-anos-colegio-santa-cecilia" target="_blank">Ver Noticia <i class="bi bi-arrow-right"></i></a></div></div></div>
+                        <div class="col-lg-4 d-flex"><div class="news-card"><div class="news-image" style="background-image: url('imagenes/2.jpg');"><h4>Acto de la Independencia</h4></div><div class="card-content"><p class="news-date">Julio 2024</p><p>Reviví los momentos más emotivos de la celebración patria, donde la historia y el presente se encontraron.</p><a href="https://www.tafiviejo.gob.ar/noticia/interes-general/131230/colegio-santa-cecilia-celebro-dia-independencia-argentina" target="_blank">Ver Noticia <i class="bi bi-arrow-right"></i></a></div></div></div>
+                        <div class="col-lg-4 d-flex"><div class="news-card"><div class="news-image" style="background-image: url('imagenes/3.png');"><h4>Proyecto FICY</h4></div><div class="card-content"><p class="news-date">Enero 2023</p><p>Alumnos participaron con un corto ambiental en el Festival de Cine de las Yungas: ¡Alerta! Hogar en Peligro.</p><a href="https://www.tafiviejo.gob.ar/noticia/ecologia-medio-ambiente/127964/ficy-celebra-educacion-ambiental-estos-cortos-taficenos" target="_blank">Ver Noticia <i class="bi bi-arrow-right"></i></a></div></div></div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-lg-4 d-flex"><div class="news-card"><div class="news-image" style="background-image: url('imagenes/4.jpg');"><h4>Campeones en Handball</h4></div><div class="card-content"><p class="news-date">Julio 2025</p><p>Equipos del colegio obtuvieron el primer puesto en los Juegos Escolares de Tafí Viejo.</p><a href="https://www.educaciontuc.gov.ar/2025/07/22/asi-cerro-tafi-viejo-su-participacion-en-los-juegos-escolares/" target="_blank">Ver Noticia <i class="bi bi-arrow-right"></i></a></div></div></div>
+                        <div class="col-lg-4 d-flex"><div class="news-card"><div class="news-image" style="background-image: url('imagenes/5.jpg');"><h4>Día del Profesor</h4></div><div class="card-content"><p class="news-date">Septiembre 2024</p><p>Alumnos participaron con números artísticos en el acto oficial de Educación Privada.</p><a href="https://www.educaciontuc.gov.ar/2024/09/17/montaldo-encabezo-homenajes-por-el-dia-del-profesor-y-de-la-educacion-privada/" target="_blank">Ver Noticia <i class="bi bi-arrow-right"></i></a></div></div></div>
+                        <div class="col-lg-4 d-flex"><div class="news-card"><div class="news-image" style="background-image: url('imagenes/6.jpeg');"><h4>Conciencia Verde</h4></div><div class="card-content"><p class="news-date">Agosto 2022</p><p>Niños del colegio plantaron hortalizas en el CIAT por el Día de las Infancias Ambiental.</p><a href="https://www.tafiviejo.gob.ar/noticia/educacion/126801/alumnos-colegio-santa-cecilia-festejaron-dia-infancias-ambiental" target="_blank">Ver Noticia <i class="bi bi-arrow-right"></i></a></div></div></div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#comunidadCarousel-pc" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Anterior</span></button>
+            <button class="carousel-control-next" type="button" data-bs-target="#comunidadCarousel-pc" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Siguiente</span></button>
+        </div>
+        
+        <div id="comunidadCarousel-mobile" class="carousel slide d-lg-none" data-bs-ride="carousel" data-bs-interval="1999">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <div class="news-card">
+                <div class="news-image" style="background-image: url('imagenes/25años.jpg');"><h4>¡Celebramos 25 Años!</h4></div>
+                <div class="card-content">
+                    <p class="news-date">Octubre 2025</p>
+                    <p>Un hito de compromiso con la educación, celebrado con toda nuestra querida comunidad.</p>
+                    <a href="https://www.tafiviejo.gob.ar/noticia/educacion/133977/rodriguez-acompano-celebracion-25-anos-colegio-santa-cecilia" target="_blank">Ver Noticia <i class="bi bi-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="news-card">
+                <div class="news-image" style="background-image: url('imagenes/2.jpg');"><h4>Acto de la Independencia</h4></div>
+                <div class="card-content">
+                    <p class="news-date">Julio 2024</p>
+                    <p>Reviví los momentos más emotivos de la celebración patria, donde la historia y el presente se encontraron.</p>
+                    <a href="https://www.tafiviejo.gob.ar/noticia/interes-general/131230/colegio-santa-cecilia-celebro-dia-independencia-argentina" target="_blank">Ver Noticia <i class="bi bi-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="news-card">
+                <div class="news-image" style="background-image: url('imagenes/3.png');"><h4>Proyecto FICY</h4></div>
+                <div class="card-content">
+                    <p class="news-date">Enero 2023</p>
+                    <p>Alumnos participaron con un corto ambiental en el Festival de Cine de las Yungas: ¡Alerta! Hogar en Peligro.</p>
+                    <a href="https://www.tafiviejo.gob.ar/noticia/ecologia-medio-ambiente/127964/ficy-celebra-educacion-ambiental-estos-cortos-taficenos" target="_blank">Ver Noticia <i class="bi bi-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="news-card">
+                <div class="news-image" style="background-image: url('imagenes/4.jpg');"><h4>Campeones en Handball</h4></div>
+                <div class="card-content">
+                    <p class="news-date">Julio 2025</p>
+                    <p>Equipos del colegio obtuvieron el primer puesto en los Juegos Escolares de Tafí Viejo.</p>
+                    <a href="https://www.educaciontuc.gov.ar/2025/07/22/asi-cerro-tafi-viejo-su-participacion-en-los-juegos-escolares/" target="_blank">Ver Noticia <i class="bi bi-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="news-card">
+                <div class="news-image" style="background-image: url('imagenes/5.jpg');"><h4>Día del Profesor</h4></div>
+                <div class="card-content">
+                    <p class="news-date">Septiembre 2024</p>
+                    <p>Alumnos participaron con números artísticos en el acto oficial de Educación Privada.</p>
+                    <a href="https://www.educaciontuc.gov.ar/2024/09/17/montaldo-encabezo-homenajes-por-el-dia-del-profesor-y-de-la-educacion-privada/" target="_blank">Ver Noticia <i class="bi bi-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="news-card">
+                <div class="news-image" style="background-image: url('imagenes/6.jpeg');"><h4>Conciencia Verde</h4></div>
+                <div class="card-content">
+                    <p class="news-date">Agosto 2022</p>
+                    <p>Niños del colegio plantaron hortalizas en el CIAT por el Día de las Infancias Ambiental.</p>
+                    <a href="https://www.tafiviejo.gob.ar/noticia/educacion/126801/alumnos-colegio-santa-cecilia-festejaron-dia-infancias-ambiental" target="_blank">Ver Noticia <i class="bi bi-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="swipe-indicator">
+        <i class="bi bi-chevron-double-right"></i>
+    </div>
+</div>
+</section>
+
+    <section id="preinscripcion" class="cta-section text-center text-white py-5">
+        <div class="container">
+            <h2 class="display-5 fw-bold">Preinscripción Ciclo Lectivo 2026</h2>
+            <p class="lead my-4">Formá parte de nuestra comunidad. ¡Te esperamos para construir juntos el mañana!</p>
+            <a href="#" class="btn btn-light btn-lg">Accedé al Formulario Online <i class="bi bi-arrow-right ms-2"></i></a>
+        </div>
+    </section>
+    <a href="#" class="whatsapp-flotante" id="abrir-chat-btn">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.894 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 4.315 1.731 6.086l.474 1.103-1.057 3.874 3.912-1.025z"/></svg>
+    <span>¿Dudas? Clic Aquí</span>
+</a>
+
+<div class="chat-popup" id="chat-popup">
+    <div class="chat-header">
+        <img src="imagenes/csc.png" alt="Logo Colegio Santa Cecilia" class="chat-logo">
+        <div class="chat-title">
+            <strong>Colegio Santa Cecilia</strong>
+            <span>Normalmente responde en minutos</span>
+        </div>
+        <span class="chat-close-btn" id="cerrar-chat-btn">&times;</span>
+    </div>
+    
+    <div class="chat-body">
+        <div class="chat-message">
+            <div class="message-sender">Colegio Santa Cecilia</div>
+            <p>¡Hola! 👋 estamos aquí para ayudar a resolver tus consultas de una manera rápida y sencilla.</p>
+        </div>
+    </div>
+    
+    <div class="chat-footer">
+        <a href="https://wa.me/549381XXXXXXX" class="chat-start-button">
+            💬 Iniciar chat
+        </a>
+    </div>
+</div>
+
+   <footer id="contacto" class="bg-dark text-white pt-5 pb-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-12 mb-4">
+                <h5 class="footer-title">Nuestra Ubicación</h5>
+                <div class="map-container shadow-lg">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3562.785882037104!2d-65.25648102538463!3d-26.73111078713319!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942267b0a48d70b7%3A0x2a731abcfa75bdb2!2sColegio%20Santa%20Cecilia!5e0!3m2!1ses-419!2sar!4v1730332020000!5m2!1ses-419!2sar" 
+                        width="100%" 
+                        height="250" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+                <p class="text-white-50 mt-3">
+                    <i class="bi bi-geo-alt-fill me-2"></i>Avenida Alem 79, Tafí Viejo, Tucumán
+                </p>
+            </div>
+
+            <div class="col-lg-2 col-md-6 mb-4">
+                <h5 class="footer-title">Colegio</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="footer-link">Historia</a></li>
+                    <li><a href="#" class="footer-link">Misión</a></li>
+                    <li><a href="#" class="footer-link">Autoridades</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mb-4">
+                <h5 class="footer-title">Contacto</h5>
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="mailto:info@csc.edu.ar" class="footer-link">
+                            <i class="bi bi-envelope-fill me-2"></i>info@csc.edu.ar
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tel:+54381461xxxx" class="footer-link">
+                            <i class="bi bi-telephone-fill me-2"></i>(0381) 461-xxxx
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://wa.me/549381XXXXXXX" class="footer-link" target="_blank">
+                            <i class="bi bi-whatsapp me-2"></i>Enviar un mensaje
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-12 mb-4 text-lg-end">
+                <h5 class="footer-title">Redes Sociales</h5>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/colegiosantacecilia1216/" target="_blank" class="social-icon"><i class="bi bi-instagram"></i></a>
+                    <a href="https://www.facebook.com/people/Colegio-Santa-Cecilia/61565903944461/#" target="_blank" class="social-icon"><i class="bi bi-facebook"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center text-white-50 pt-3 mt-3 border-top border-secondary opacity-75">
+            <small>© 2025 Colegio Santa Cecilia. Todos los derechos reservados.</small>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    /*!
+     * Color mode toggler for Bootstrap's docs (https://getbootstrap.com/)
+     * Copyright 2011-2022 The Bootstrap Authors
+     * Licensed under the Creative Commons Attribution 3.0 Unported License.
+     */
+    (() => {
+        'use strict'
+
+        const storedTheme = localStorage.getItem('theme')
+
+        const getPreferredTheme = () => {
+            if (storedTheme) {
+                return storedTheme
+            }
+            return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+        }
+
+        const setTheme = function (theme) {
+            if (theme === 'auto' && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                document.documentElement.setAttribute('data-bs-theme', 'dark')
+            } else {
+                document.documentElement.setAttribute('data-bs-theme', theme)
+            }
+        }
+
+        setTheme(getPreferredTheme())
+
+        const showActiveTheme = theme => {
+            const activeThemeIcon = document.querySelector('.theme-icon-active')
+            const btnToActive = document.querySelector(`[data-bs-theme-value="${theme}"]`)
+            const iconOfActiveBtn = btnToActive.querySelector('i.bi-check-lg')
+
+            document.querySelectorAll('[data-bs-theme-value]').forEach(element => {
+                element.classList.remove('active')
+                element.querySelector('i.bi-check-lg').classList.add('d-none')
+            })
+
+            btnToActive.classList.add('active')
+            iconOfActiveBtn.classList.remove('d-none')
+        }
+
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
+            if (storedTheme !== 'light' && storedTheme !== 'dark') {
+                setTheme(getPreferredTheme())
+            }
+        })
+
+        window.addEventListener('DOMContentLoaded', () => {
+            showActiveTheme(getPreferredTheme())
+
+            document.querySelectorAll('[data-bs-theme-value]')
+                .forEach(toggle => {
+                    toggle.addEventListener('click', () => {
+                        const theme = toggle.getAttribute('data-bs-theme-value')
+                        localStorage.setItem('theme', theme)
+                        setTheme(theme)
+                        showActiveTheme(theme)
+                    })
+                })
+        })
+    })()
+</script>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const abrirChatBtn = document.getElementById('abrir-chat-btn');
+        const cerrarChatBtn = document.getElementById('cerrar-chat-btn');
+        const chatPopup = document.getElementById('chat-popup');
+
+        // Evento para ABRIR la ventana de chat
+        abrirChatBtn.addEventListener('click', (e) => {
+            e.preventDefault(); // Evita que la página salte hacia arriba
+            chatPopup.style.display = 'flex'; // Muestra la ventana de chat
+            abrirChatBtn.style.display = 'none'; // Oculta el botón flotante
+        });
+
+        // Evento para CERRAR la ventana de chat
+        cerrarChatBtn.addEventListener('click', () => {
+            chatPopup.style.display = 'none'; // Oculta la ventana de chat
+            abrirChatBtn.style.display = 'flex'; // Vuelve a mostrar el botón flotante
+        });
+    });
+</script>
+
+  
+
+</body>
+</html>
