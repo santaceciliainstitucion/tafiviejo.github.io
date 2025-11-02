@@ -571,18 +571,18 @@ footer .footer-link i {
 /* BOTÓN FLOTANTE DE WHATSAPP */
 .whatsapp-flotante {
     position: fixed;
-    bottom: 20px;
+    bottom: 35px;
     right: 20px;
     background-color: #00aaff; /* Color azul brillante */
     color: white;
-    padding: 12px 20px;
+    padding: 14px 22px;
     border-radius: 30px;
     display: flex;
     align-items: center;
     gap: 8px; /* Espacio entre icono y texto */
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
     text-decoration: none;
-    font-size: 16px;
+    font-size: 17px;
     font-weight: bold;
     z-index: 999;
     transition: transform 0.2s ease-in-out, background-color 0.3s;
@@ -727,3 +727,4 @@ footer .footer-link i {
     color: #ffffff; /* Texto blanco brillante */
     background-color: rgba(255, 255, 255, 0.15); /* Un fondo grisáceo para indicar selección */
 }
+
